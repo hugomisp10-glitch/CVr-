@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cabo Verde All Inclusive — Guia da Viagem · 7 Dias</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Cabo Verde">
+<meta name="theme-color" content="#04283a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night:#04283a; --night-2:#0a3c53;
+    --cream:#fffaf1; --cream-2:#f3e9d2;
+    --gold:#f2a154; --gold-2:#ffc178;
+    --wine:#0e8a86; --wine-2:#0a6a67;
+    --pine:#2f9e6e;
+    --ink:#1a2b1f; --ink-soft:#48594d;
+    --text-light:#eef6f6; --text-muted:#c7ddde;
+    --radius:16px;
+    --shadow:0 12px 32px rgba(4,20,30,.30);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;scroll-behavior:smooth;}
+  body{
+    background:
+      radial-gradient(1200px 600px at 10% -10%, #0e4f63 0%, transparent 60%),
+      radial-gradient(1000px 500px at 100% 0%, #0a3c53 0%, transparent 55%),
+      var(--night);
+    color:var(--text-light);
+    font-family:'Public Sans', system-ui, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:70px;
+    font-size:15.5px;
+    line-height:1.6;
+  }
+  h1,h2,h3,.serif{font-family:'Fraunces', Georgia, serif;}
+  a{color:var(--gold-2);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  :focus-visible{outline:2px solid var(--gold-2);outline-offset:2px;}
+  img{display:block;max-width:100%;}
+  button{font-family:inherit;cursor:pointer;}
+
+  .hero{
+    position:relative; min-height:260px;
+    display:flex;flex-direction:column;justify-content:flex-end;
+    padding:26px 20px 30px; overflow:hidden;
+    background:
+      linear-gradient(180deg, rgba(4,40,58,.10) 0%, rgba(4,25,36,.55) 55%, var(--night) 100%),
+      radial-gradient(120% 140% at 15% 0%, #1fb8b0 0%, #0e8a86 32%, #0a5e73 62%, #04283a 100%);
+  }
+  .hero:after{
+    content:"";position:absolute;inset:0;z-index:-1;
+    background:
+      radial-gradient(60px 60px at 85% 20%, rgba(255,214,140,.9), transparent 70%),
+      repeating-linear-gradient(115deg, rgba(255,255,255,.05) 0 2px, transparent 2px 22px);
+  }
+  .hero .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-2);font-weight:700;margin-bottom:10px;text-shadow:0 2px 8px rgba(0,0,0,.5);}
+  .hero h1{font-size:clamp(28px,7.5vw,42px);font-weight:700;line-height:1.08;margin:0 0 10px;color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.55);}
+  .hero h1 em{font-style:italic;color:var(--gold-2);}
+  .hero p.sub{max-width:520px;margin:0 0 16px;color:#eafaf6;font-size:14.5px;line-height:1.55;text-shadow:0 2px 10px rgba(0,0,0,.5);}
+  .countdown{display:inline-flex;align-items:baseline;gap:8px;background:rgba(4,40,58,.55);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:8px 16px;font-size:13px;color:var(--text-light);}
+  .countdown b{font-family:'Fraunces',serif;font-size:17px;color:var(--gold-2);}
+  .garland{height:6px;width:100%;background:repeating-linear-gradient(90deg,var(--gold-2) 0 8px, transparent 8px 20px);opacity:.55;}
+
+  .overview{max-width:760px;margin:0 auto;padding:16px 16px 6px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
+  .ov-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:12px 8px;text-align:center;}
+  .ov-card .n{font-family:'Fraunces',serif;font-size:21px;color:var(--gold-2);font-weight:600;}
+  .ov-card .l{font-size:10.5px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em;margin-top:2px;}
+
+  .route-badge{max-width:760px;margin:4px auto 0;padding:0 16px;}
+  .route-badge-inner{
+    background:rgba(242,161,84,.14);border:1px solid rgba(242,161,84,.4);
+    border-radius:12px;padding:9px 13px;font-size:12.5px;color:#ffe3bd;
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+  }
+  .route-badge-inner button{background:var(--gold);border:none;color:#3a2107;font-weight:800;font-size:11.5px;padding:6px 11px;border-radius:999px;white-space:nowrap;}
+
+  .tabbar-wrap{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,var(--night) 78%, rgba(4,40,58,0));padding:14px 0 10px;}
+  .tabbar{display:flex;gap:8px;overflow-x:auto;padding:0 16px 4px;scrollbar-width:none;}
+  .tabbar::-webkit-scrollbar{display:none;}
+  .tab{flex:none;font-family:'Public Sans',sans-serif;font-size:13.5px;font-weight:700;padding:10px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.05);color:var(--text-light);white-space:nowrap;transition:all .18s ease;}
+  .tab .d{display:block;font-size:9.5px;font-weight:600;opacity:.7;letter-spacing:.04em;}
+  .tab.active{background:var(--gold);border-color:var(--gold);color:#2b1c07;}
+  .tab.active .d{color:#4a340f;}
+
+  .panel{display:none;max-width:760px;margin:0 auto;padding:10px 16px 34px;animation:fade .3s ease;}
+  .panel.active{display:block;}
+  @keyframes fade{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+
+  .day-head{margin:6px 0 18px;}
+  .day-head .tag{display:inline-block;background:var(--wine);color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 11px;border-radius:7px;margin-bottom:9px;}
+  .day-head h2{font-size:24px;margin:0 0 5px;color:#fff;}
+  .day-head p{margin:0 0 10px;color:var(--text-muted);font-size:14px;}
+  .edit-toggle{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:var(--text-light);font-size:12.5px;font-weight:700;padding:8px 13px;border-radius:999px;}
+  .edit-toggle:hover{background:rgba(255,255,255,.15);}
+
+  .timeline{position:relative;padding-left:24px;}
+  .timeline:before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--gold),var(--wine));opacity:.5;}
+  .item{position:relative;margin-bottom:16px;}
+  .item:before{content:"";position:absolute;left:-24px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--gold-2);border:2px solid var(--night);}
+  .item.transport:before{background:#9dc9e8;}
+  .item.food:before{background:var(--wine-2);}
+  .item.tip:before{background:var(--pine);}
+
+  .card{background:var(--cream);color:var(--ink);border-radius:var(--radius);padding:15px 16px;box-shadow:var(--shadow);transition:opacity .2s ease;}
+  .card.done{opacity:.5;}
+  .card.done .title{text-decoration:line-through;}
+  .card .row{display:flex;align-items:center;gap:9px;margin-bottom:5px;}
+  .card .time{font-family:'Fraunces',serif;font-weight:700;font-size:16px;color:var(--wine);}
+  .card .title{font-weight:700;font-size:15.5px;flex:1;color:var(--ink);}
+  .card p{margin:5px 0 0;font-size:14px;line-height:1.58;color:var(--ink-soft);}
+
+  .check{flex:none;width:24px;height:24px;border-radius:7px;border:2px solid var(--pine);background:#fff;display:flex;align-items:center;justify-content:center;color:var(--pine);font-weight:900;font-size:15px;}
+  .check.on{background:var(--pine);color:#fff;}
+
+  .edit-card{background:var(--cream);color:var(--ink);border-radius:var(--radius);padding:13px 14px;box-shadow:var(--shadow);margin-bottom:12px;}
+  .edit-row-top{display:flex;gap:8px;margin-bottom:8px;}
+  .ei{border:1px solid #ddd0ac;border-radius:8px;padding:8px 10px;font-family:inherit;font-size:13.5px;background:#fff;color:var(--ink);}
+  .ei.time{width:70px;flex:none;}
+  select.ei{flex:1;}
+  .ei-del{flex:none;background:#f6dede;border:1px solid #e0b3b3;color:#8a2e3a;border-radius:8px;padding:0 12px;font-weight:700;}
+  .ei-title{width:100%;margin-bottom:8px;font-weight:700;}
+  .ei-desc{width:100%;min-height:60px;resize:vertical;}
+  #add-row-btn{width:100%;background:rgba(255,255,255,.08);border:1px dashed rgba(255,255,255,.3);color:var(--text-light);border-radius:12px;padding:12px;font-weight:700;font-size:13.5px;margin-bottom:12px;}
+  .edit-actions{display:flex;flex-wrap:wrap;gap:8px;}
+  .edit-actions button{flex:1;min-width:120px;border-radius:999px;padding:11px;font-weight:800;font-size:13px;border:none;}
+  #save-edit-btn{background:var(--pine);color:#fff;}
+  #cancel-edit-btn{background:rgba(255,255,255,.1);color:var(--text-light);border:1px solid rgba(255,255,255,.2) !important;}
+  #reset-edit-btn{background:rgba(242,161,84,.18);color:#ffd9a8;border:1px solid rgba(242,161,84,.4) !important;}
+
+  .route-card{background:var(--cream);color:var(--ink);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);margin-bottom:14px;border:3px solid transparent;}
+  .route-card.selected{border-color:var(--pine);}
+  .route-card .rc-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:6px;}
+  .route-card h3{margin:0;font-size:18px;color:var(--wine);}
+  .route-card .rc-badge{font-size:10.5px;font-weight:800;background:var(--pine);color:#fff;padding:3px 9px;border-radius:999px;white-space:nowrap;}
+  .route-card p.rc-desc{font-size:13.5px;color:var(--ink-soft);margin:0 0 12px;line-height:1.55;}
+  .route-card ul{margin:0 0 14px;padding-left:18px;font-size:13px;color:var(--ink-soft);}
+  .route-card ul li{margin-bottom:4px;}
+  .route-card button.rc-select{width:100%;background:var(--gold);border:none;color:#3a2107;font-weight:800;font-size:14px;padding:12px;border-radius:999px;}
+  .route-card.selected button.rc-select{background:var(--pine);color:#fff;}
+
+  .block{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:18px 17px 16px;margin-bottom:16px;}
+  .block h3{font-size:17px;margin:0 0 4px;color:var(--gold-2);display:flex;align-items:center;gap:9px;}
+  .block > p.lead{font-size:13.5px;color:var(--text-muted);margin:0 0 14px;}
+  .subgroup{margin-bottom:14px;}
+  .subgroup h4{font-size:11.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--gold-2);margin:0 0 8px;font-weight:800;}
+
+  .place-list{background:var(--cream);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);}
+  .place{display:flex;align-items:flex-start;gap:11px;padding:12px 13px;border-bottom:1px solid #ece0c5;color:var(--ink);}
+  .place:last-child{border-bottom:none;}
+  .place .ptext{flex:1;min-width:0;}
+  .place .pn{font-weight:700;font-size:14.5px;color:var(--ink);}
+  .place .pd{font-size:13px;color:var(--ink-soft);margin-top:2px;line-height:1.5;}
+  .place .pp{font-size:11.5px;color:var(--wine);white-space:nowrap;text-align:right;font-weight:700;flex:none;padding-top:2px;}
+  .place .pmap{flex:none;font-size:11px;font-weight:800;background:var(--pine);color:#fff;padding:6px 10px;border-radius:999px;white-space:nowrap;}
+
+  .note{background:rgba(242,161,84,.14);border:1px solid rgba(242,161,84,.4);border-radius:11px;padding:11px 13px;font-size:13.3px;color:#ffe3bd;line-height:1.55;margin-top:10px;}
+  .note b{color:var(--gold-2);}
+
+  .checklist{list-style:none;padding:0;margin:0;}
+  .checklist li{padding:9px 0 9px 26px;position:relative;font-size:14px;color:var(--text-light);border-bottom:1px solid rgba(255,255,255,.08);}
+  .checklist li:last-child{border-bottom:none;}
+  .checklist li:before{content:"✓";position:absolute;left:0;top:9px;color:var(--pine);background:#dff0e6;width:17px;height:17px;border-radius:5px;font-size:11.5px;line-height:17px;text-align:center;font-weight:800;}
+
+  .map-frame{width:100%;height:280px;border:0;border-radius:12px;box-shadow:var(--shadow);}
+  .map-caption{font-size:12.5px;color:var(--text-muted);margin:8px 0 18px;text-align:center;}
+
+  .links-grid{display:grid;gap:8px;}
+  .link-row{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--cream);border-radius:11px;padding:12px 14px;color:var(--ink);box-shadow:var(--shadow);}
+  .link-row .ln{font-weight:700;font-size:14px;}
+  .link-row .ld{font-size:12px;color:var(--ink-soft);margin-top:1px;}
+  .link-row a.go{font-size:12.5px;font-weight:800;color:var(--wine);white-space:nowrap;}
+
+  .phrase-table{width:100%;border-collapse:collapse;background:var(--cream);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);}
+  .phrase-table td{padding:10px 12px;font-size:13.5px;color:var(--ink);border-bottom:1px solid #ece0c5;}
+  .phrase-table tr:last-child td{border-bottom:none;}
+  .phrase-table td.fr{color:var(--wine);font-weight:700;white-space:nowrap;}
+
+  textarea.notes-area{width:100%;min-height:110px;border-radius:12px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);color:var(--text-light);padding:12px 13px;font-family:inherit;font-size:14px;line-height:1.55;resize:vertical;}
+  textarea.notes-area::placeholder{color:var(--text-muted);}
+  .save-status{font-size:11.5px;color:var(--text-muted);margin-top:6px;min-height:14px;}
+  .reset-btn{display:inline-block;margin-top:8px;font-size:12px;font-weight:700;color:#ffd9a8;background:rgba(242,161,84,.18);border:1px solid rgba(242,161,84,.4);border-radius:999px;padding:7px 13px;}
+
+  .toggle-row{display:flex;gap:8px;margin-bottom:14px;}
+  .toggle-btn{flex:1;text-align:center;padding:10px;border-radius:11px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.05);color:var(--text-light);font-weight:700;font-size:13.5px;}
+  .toggle-btn .d{display:block;font-size:10.5px;font-weight:600;opacity:.7;}
+  .toggle-btn.active{background:var(--gold);border-color:var(--gold);color:#2b1c07;}
+  .toggle-btn.active .d{color:#4a340f;}
+  .foodpkg{display:none;}
+  .foodpkg.active{display:block;}
+
+  footer{text-align:center;color:#8aa4ac;font-size:11.5px;padding:24px 16px 0;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="eyebrow">7 dias · All Inclusive · Cabo Verde</div>
+  <h1>Cabo Verde <em>All Inclusive</em><br>3 alternativas de ilha</h1>
+  <p class="sub">Guia da viagem — 7 dias de sol, praia e passeios. Escolham entre Ilha do Sal, Boa Vista ou o circuito Santiago &amp; São Vicente.</p>
+  <div class="countdown" id="countdown">☀️ Bom descanso e boa viagem!</div>
+</div>
+<div class="garland"></div>
+
+<div class="overview">
+  <div class="ov-card"><div class="n">7</div><div class="l">Dias</div></div>
+  <div class="ov-card"><div class="n">3</div><div class="l">Alternativas</div></div>
+  <div class="ov-card"><div class="n">10+</div><div class="l">Praias & passeios</div></div>
+  <div class="ov-card"><div class="n">☀️</div><div class="l">All Inclusive</div></div>
+</div>
+
+<div class="route-badge">
+  <div class="route-badge-inner">
+    <span id="route-badge-text">🌴 Roteiro ativo: Ilha do Sal</span>
+    <button onclick="switchTab('rotas')">Mudar</button>
+  </div>
+</div>
+
+<div class="tabbar-wrap">
+  <div class="tabbar" id="tabbar">
+    <div class="tab" data-panel="rotas">Alternativas</div>
+    <div class="tab active" data-panel="d1">Dia 1<span class="d">Chegada</span></div>
+    <div class="tab" data-panel="d2">Dia 2<span class="d"></span></div>
+    <div class="tab" data-panel="d3">Dia 3<span class="d"></span></div>
+    <div class="tab" data-panel="d4">Dia 4<span class="d"></span></div>
+    <div class="tab" data-panel="d5">Dia 5<span class="d"></span></div>
+    <div class="tab" data-panel="d6">Dia 6<span class="d"></span></div>
+    <div class="tab" data-panel="d7">Dia 7<span class="d">Partida</span></div>
+    <div class="tab" data-panel="ver">Ver</div>
+    <div class="tab" data-panel="comer">Comer</div>
+    <div class="tab" data-panel="mapas">Mapas</div>
+    <div class="tab" data-panel="custos">Custos</div>
+    <div class="tab" data-panel="pratico">Prático</div>
+  </div>
+</div>
+
+<!-- =================== ALTERNATIVAS =================== -->
+<div class="panel active" id="rotas">
+  <div class="day-head">
+    <div class="tag">Escolham a vossa ilha</div>
+    <h2>3 alternativas de roteiro</h2>
+    <p>A escolha fica guardada no telemóvel — os dias 1 a 7 mostram sempre a alternativa selecionada aqui</p>
+  </div>
+
+  <div class="route-card" id="rc-A">
+    <div class="rc-top"><h3>🏖️ Alternativa 1 — Ilha do Sal</h3><span class="rc-badge">All Inclusive</span></div>
+    <p class="rc-desc">A ilha mais turística de Cabo Verde: resorts all inclusive em Santa Maria, praias de areia branca e água turquesa, kitesurf de nível mundial e as icónicas salinas de Pedra de Lume.</p>
+    <ul>
+      <li>7 noites em regime All Inclusive, Santa Maria</li>
+      <li>2 excursões incluídas no roteiro: Pedra de Lume/Buracona e Deserto de Viana</li>
+      <li>Ideal para quem quer praia, resort e o mínimo de deslocações</li>
+    </ul>
+    <button class="rc-select" onclick="selectRoute('A')">Selecionar esta alternativa</button>
+  </div>
+
+  <div class="route-card" id="rc-B">
+    <div class="rc-top"><h3>🐢 Alternativa 2 — Boa Vista</h3><span class="rc-badge">All Inclusive</span></div>
+    <p class="rc-desc">Ilha vizinha do Sal, com dunas de deserto que chegam ao mar, o naufrágio do Cabo Santa Maria e uma das maiores zonas de desova de tartarugas do mundo (época de verão).</p>
+    <ul>
+      <li>7 noites em regime All Inclusive, Sal Rei / Praia de Chaves</li>
+      <li>Excursões: Deserto de Viana + Ilhéu do Baluarte + naufrágio</li>
+      <li>Ideal para quem quer natureza mais selvagem sem abdicar do all inclusive</li>
+    </ul>
+    <button class="rc-select" onclick="selectRoute('B')">Selecionar esta alternativa</button>
+  </div>
+
+  <div class="route-card" id="rc-C">
+    <div class="rc-top"><h3>🎶 Alternativa 3 — Santiago & São Vicente</h3><span class="rc-badge">Circuito cultural</span></div>
+    <p class="rc-desc">Combinação de duas ilhas com história e cultura: Cidade Velha (Património Mundial UNESCO) em Santiago, e Mindelo, a cidade da morna e de Cesária Évora, em São Vicente, com escapadela a Santo Antão.</p>
+    <ul>
+      <li>Não existem resorts all inclusive nestas ilhas — regime pequeno-almoço/meia-pensão em hotéis boutique</li>
+      <li>Inclui 1 voo doméstico Praia → Mindelo</li>
+      <li>Ideal para quem prefere cultura, música e paisagens de montanha à praia de resort</li>
+    </ul>
+    <button class="rc-select" onclick="selectRoute('C')">Selecionar esta alternativa</button>
+  </div>
+</div>
+
+<!-- =================== DIAS 1-7 =================== -->
+<div class="panel" id="d1">
+  <div class="day-head">
+    <div class="tag" id="tag-d1"></div>
+    <h2 id="h2-d1"></h2>
+    <p id="sub-d1"></p>
+    <button class="edit-toggle" onclick="startEdit('d1')">✏️ Editar este dia</button>
+  </div>
+  <div class="timeline" id="tl-d1"></div>
+</div>
+<div class="panel" id="d2">
+  <div class="day-head">
+    <div class="tag" id="tag-d2"></div>
+    <h2 id="h2-d2"></h2>
+    <p id="sub-d2"></p>
+    <button class="edit-toggle" onclick="startEdit('d2')">✏️ Editar este dia</button>
+  </div>
+  <div class="timeline" id="tl-d2"></div>
+</div>
+<div class="panel" id="d3">
+  <div class="day-head">
+    <div class="tag" id="tag-d3"></div>
+    <h2 id="h2-d3"></h2>
+    <p id="sub-d3"></p>
+    <button class="edit-toggle" onclick="startEdit('d3')">✏️ Editar este dia</button>
+  </div>
+  <div class="timeline" id="tl-d3"></div>
+</div>
+<div class="panel" id="d4">
+  <div class="day-head">
+    <div class="tag" id="tag-d4"></div>
+    <h2 id="h2-d4"></h2>
+    <p id="sub-d4"></p>
+    <button class="edit-toggle" onclick="startEdit('d4')">✏️ Editar este dia</button>
+  </div>
+  <div class="timeline" id="tl-d4"></div>
+</div>
+<div class="panel" id="d5">
+  <div class="day-head">
+    <div class="tag" id="tag-d5"></div>
+    <h2 id="h2-d5"></h2>
+    <p id="sub-d5"></p>
+    <button class="edit-toggle" onclick="startEdit('d5')">✏️ Editar este dia</button>
+  </div>
+  <div class="timeline" id="tl-d5"></div>
+</div>
+<div class="panel" id="d6">
+  <div class="day-head">
+    <div class="tag" id="tag-d6"></div>
+    <h2 id="h2-d6"></h2>
+    <p id="sub-d6"></p>
+    <button class="edit-toggle" onclick="startEdit('d6')">✏️ Editar este dia</button>
+  </div>
+  <div class="timeline" id="tl-d6"></div>
+</div>
+<div class="panel" id="d7">
+  <div class="day-head">
+    <div class="tag" id="tag-d7"></div>
+    <h2 id="h2-d7"></h2>
+    <p id="sub-d7"></p>
+    <button class="edit-toggle" onclick="startEdit('d7')">✏️ Editar este dia</button>
+  </div>
+  <div class="timeline" id="tl-d7"></div>
+</div>
+
+<!-- =================== VER =================== -->
+<div class="panel" id="ver">
+  <div class="day-head">
+    <div class="tag">Atrações</div>
+    <h2>O que ver em cada ilha</h2>
+    <p>Praias, geologia vulcânica e património — organizado por destino</p>
+  </div>
+
+  <div class="block">
+    <h3>🏖️ Ilha do Sal <span style="font-size:11px;font-weight:700;color:var(--text-muted);">(Alternativa 1)</span></h3>
+    <div class="place-list" id="list-atracoes-sal"></div>
+  </div>
+
+  <div class="block">
+    <h3>🐢 Boa Vista <span style="font-size:11px;font-weight:700;color:var(--text-muted);">(Alternativa 2)</span></h3>
+    <div class="place-list" id="list-atracoes-boavista"></div>
+  </div>
+
+  <div class="block">
+    <h3>🏛️ Santiago <span style="font-size:11px;font-weight:700;color:var(--text-muted);">(Alternativa 3)</span></h3>
+    <div class="place-list" id="list-atracoes-santiago"></div>
+  </div>
+
+  <div class="block">
+    <h3>🎶 São Vicente & Santo Antão <span style="font-size:11px;font-weight:700;color:var(--text-muted);">(Alternativa 3)</span></h3>
+    <div class="place-list" id="list-atracoes-saovicente"></div>
+  </div>
+</div>
+
+<!-- =================== COMER =================== -->
+<div class="panel" id="comer">
+  <div class="day-head">
+    <div class="tag">Gastronomia</div>
+    <h2>Comer em Cabo Verde</h2>
+    <p>Nas alternativas 1 e 2 as refeições estão incluídas no all inclusive — aqui fica o que esperar e onde sair, se quiserem variar</p>
+  </div>
+
+  <div class="block">
+    <h3>🍽️ O que está incluído no All Inclusive</h3>
+    <ul class="checklist">
+      <li>Pequeno-almoço, almoço e jantar em regime buffet no resort</li>
+      <li>Snacks a meio da manhã/tarde e late snack à noite (varia por resort)</li>
+      <li>Bebidas nacionais (cerveja Strela, grogue, refrigerantes, sumos) incluídas nas refeições e bares</li>
+      <li>1 jantar temático à la carte por estadia costuma estar incluído (reservar no resort com antecedência)</li>
+      <li>Bebidas importadas/premium e spa geralmente não incluídos — confirmar sempre na reserva</li>
+    </ul>
+    <div class="toggle-row">
+      <button class="toggle-btn foodtab active" data-food="sal" onclick="null">🏖️ Sair em Santa Maria</button>
+      <button class="toggle-btn foodtab" data-food="boavista" onclick="null">🐢 Sair em Sal Rei</button>
+    </div>
+    <div class="foodpkg active" id="food-sal">
+      <div class="place-list" id="list-food-sal"></div>
+    </div>
+    <div class="foodpkg" id="food-boavista">
+      <div class="place-list" id="list-food-boavista"></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <h3>🎶 Comer em Santiago & São Vicente <span style="font-size:11px;font-weight:700;color:var(--text-muted);">(Alternativa 3 — regime pequeno-almoço/meia-pensão)</span></h3>
+    <div class="subgroup"><h4>Praia (Santiago)</h4><div class="place-list" id="list-food-praia"></div></div>
+    <div class="subgroup"><h4>Mindelo (São Vicente)</h4><div class="place-list" id="list-food-mindelo"></div></div>
+    <div class="note">💶 <b>Orçamento estimado por pessoa (Alternativa 3, 7 dias, sem all inclusive): ~180–260€</b> em refeições, dependendo do nível dos restaurantes escolhidos.</div>
+  </div>
+
+  <div class="block">
+    <h3>🥘 Pratos a experimentar</h3>
+    <div class="place-list">
+      <div class="place"><div class="ptext"><div class="pn">Cachupa</div><div class="pd">Prato nacional — guisado de milho, feijão e carne ou peixe</div></div></div>
+      <div class="place"><div class="ptext"><div class="pn">Peixe grelhado / lagosta</div><div class="pd">Fresquíssimo em todas as ilhas, sobretudo em Boa Vista e Sal</div></div></div>
+      <div class="place"><div class="ptext"><div class="pn">Pastel com diabo dentro</div><div class="pd">Pastel de peixe picante, típico de São Vicente</div></div></div>
+      <div class="place"><div class="ptext"><div class="pn">Grogue & ponche</div><div class="pd">Aguardente de cana local, sobretudo em Santo Antão</div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- =================== MAPAS =================== -->
+<div class="panel" id="mapas">
+  <div class="day-head">
+    <div class="tag">Orientação</div>
+    <h2>Mapas das ilhas</h2>
+    <p>Localização dos resorts, aeroportos e transportes entre ilhas</p>
+  </div>
+
+  <div class="block">
+    <h3>🏖️ Ilha do Sal — Santa Maria</h3>
+    <iframe class="map-frame" loading="lazy" src="https://maps.google.com/maps?q=Santa%20Maria%20Sal%20Cabo%20Verde&z=13&output=embed"></iframe>
+    <p class="map-caption">Resorts concentrados junto à Praia de Santa Maria — aeroporto (SID) fica em Espargos, ~15–20 min de transfer.</p>
+  </div>
+
+  <div class="block">
+    <h3>🐢 Boa Vista — Sal Rei</h3>
+    <iframe class="map-frame" loading="lazy" src="https://maps.google.com/maps?q=Sal%20Rei%20Boa%20Vista%20Cabo%20Verde&z=13&output=embed"></iframe>
+    <p class="map-caption">Resorts junto a Sal Rei e à Praia de Chaves — aeroporto (BVC) fica em Rabil, ~5–15 min de transfer.</p>
+  </div>
+
+  <div class="block">
+    <h3>🏛️ Santiago — Praia & Cidade Velha</h3>
+    <iframe class="map-frame" loading="lazy" src="https://maps.google.com/maps?q=Cidade%20Velha%20Santiago%20Cabo%20Verde&z=12&output=embed"></iframe>
+    <p class="map-caption">Cidade Velha fica a ~15 km da capital Praia — aeroporto Nelson Mandela (RAI) fica a ~2 km do centro da Praia.</p>
+  </div>
+
+  <div class="block">
+    <h3>🎶 São Vicente — Mindelo</h3>
+    <iframe class="map-frame" loading="lazy" src="https://maps.google.com/maps?q=Mindelo%20Sao%20Vicente%20Cabo%20Verde&z=13&output=embed"></iframe>
+    <p class="map-caption">Aeroporto Cesária Évora (VXE) fica a ~10 min do centro de Mindelo. Ferry/lancha para Santo Antão sai do porto de Mindelo (~1h de travessia).</p>
+  </div>
+
+  <div class="block">
+    <h3>✈️⛴️ Transportes entre ilhas</h3>
+    <div class="links-grid">
+      <div class="link-row"><div><div class="ln">CV Interilhas / Binter Cabo Verde</div><div class="ld">Voos domésticos entre ilhas — usado na Alternativa 3</div></div><a class="go" href="https://www.bintercv.pt" target="_blank" rel="noopener">Abrir ↗</a></div>
+      <div class="link-row"><div><div class="ln">TACV / Cabo Verde Airlines</div><div class="ld">Voos internacionais para Sal, Boa Vista e Praia</div></div><a class="go" href="https://www.caboverdeairlines.com" target="_blank" rel="noopener">Abrir ↗</a></div>
+      <div class="link-row"><div><div class="ln">Aeroportos e Segurança Aérea (ASA)</div><div class="ld">Informação oficial dos aeroportos de Cabo Verde</div></div><a class="go" href="https://www.asa.cv" target="_blank" rel="noopener">Abrir ↗</a></div>
+    </div>
+    <div class="note">⚠️ Os voos domésticos entre ilhas têm frequência limitada (por vezes 1x/dia) — confirmem sempre horários com bastante antecedência, sobretudo na Alternativa 3.</div>
+  </div>
+</div>
+
+<!-- =================== CUSTOS =================== -->
+<div class="panel" id="custos">
+  <div class="day-head">
+    <div class="tag">Orçamento</div>
+    <h2>O que não está incluído no All Inclusive</h2>
+    <p>Estimativas por pessoa — voos internacionais não incluídos em nenhuma alternativa</p>
+  </div>
+
+  <div class="block">
+    <h3>🏖️ Extras — Alternativas 1 e 2 (Sal / Boa Vista)</h3>
+    <div class="place-list">
+      <div class="place"><div class="ptext"><div class="pn">Excursão salinas + Buracona / Deserto de Viana</div><div class="pd">Meio-dia, com transporte e guia</div></div><div class="pp">~35–45€</div></div>
+      <div class="place"><div class="ptext"><div class="pn">Excursão jipe 4x4 dia inteiro</div><div class="pd">Deserto + almoço incluído</div></div><div class="pp">~55–70€</div></div>
+      <div class="place"><div class="ptext"><div class="pn">Passeio de catamaran / barco com snorkel</div><div class="pd">Meio-dia, bebidas incluídas</div></div><div class="pp">~45–60€</div></div>
+      <div class="place"><div class="ptext"><div class="pn">Aula de kitesurf / windsurf (iniciação)</div><div class="pd">Equipamento incluído</div></div><div class="pp">~50–80€</div></div>
+      <div class="place"><div class="ptext"><div class="pn">Massagem / tratamento de SPA</div><div class="pd">Não incluído na maioria dos pacotes all inclusive</div></div><div class="pp">~40–70€</div></div>
+      <div class="place"><div class="ptext"><div class="pn">Taxa turística (por noite, cobrada no local)</div><div class="pd">Aplicada em Sal e Boa Vista</div></div><div class="pp">~2€/noite</div></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <h3>🎶 Custos — Alternativa 3 (Santiago & São Vicente)</h3>
+    <div class="place-list">
+      <div class="place"><div class="ptext"><div class="pn">Alojamento (7 noites, pequeno-almoço)</div><div class="pd">Hotéis boutique em Praia e Mindelo</div></div><div class="pp">variável</div></div>
+      <div class="place"><div class="ptext"><div class="pn">Voo doméstico Praia → Mindelo</div><div class="pd">CV Interilhas / Binter, reservar com antecedência</div></div><div class="pp">~70–100€</div></div>
+      <div class="place"><div class="ptext"><div class="pn">Excursão Cidade Velha + Tarrafal</div><div class="pd">Dia inteiro, com guia e transporte</div></div><div class="pp">~40–55€</div></div>
+      <div class="place"><div class="ptext"><div class="pn">Trilho Serra Malagueta (guia local)</div><div class="pd">Meio-dia</div></div><div class="pp">~25–35€</div></div>
+      <div class="place"><div class="ptext"><div class="pn">Excursão a Santo Antão (barco + trilhos)</div><div class="pd">Dia inteiro a partir de Mindelo</div></div><div class="pp">~50–70€</div></div>
+      <div class="place"><div class="ptext"><div class="pn">Refeições (7 dias)</div><div class="pd">Ver secção "Comer"</div></div><div class="pp">~180–260€</div></div>
+    </div>
+    <div class="note">💡 A Alternativa 3 não tem all inclusive disponível — o orçamento total por pessoa costuma ficar entre os das Alternativas 1/2 e o valor de um pacote all inclusive de gama alta, dependendo dos hotéis escolhidos.</div>
+  </div>
+
+  <div class="block">
+    <h3>💰 Comparação rápida (excluindo voo internacional)</h3>
+    <div class="place-list">
+      <div class="place"><div class="ptext"><div class="pn">Alt. 1 — Ilha do Sal, All Inclusive + excursões</div></div><div class="pp">~150–220€ extras</div></div>
+      <div class="place"><div class="ptext"><div class="pn">Alt. 2 — Boa Vista, All Inclusive + excursões</div></div><div class="pp">~150–220€ extras</div></div>
+      <div class="place"><div class="ptext"><div class="pn">Alt. 3 — Santiago & São Vicente, tudo incluído no orçamento</div></div><div class="pp">~450–650€ total</div></div>
+    </div>
+    <div class="note">⚠️ Valores estimados a confirmar caso a caso — pedir sempre orçamento à agência ou aos operadores locais antes de reservar.</div>
+  </div>
+</div>
+
+<!-- =================== PRÁTICO =================== -->
+<div class="panel" id="pratico">
+  <div class="day-head">
+    <div class="tag">Referência</div>
+    <h2>Guia prático</h2>
+    <p>Moeda, saúde, contactos de emergência, frases em kriolu e lista de bagagem</p>
+  </div>
+
+  <div class="block">
+    <h3>📝 Notas do grupo</h3>
+    <p class="lead">Espaço partilhado — usem para reservas confirmadas, números de voo, moradas do resort, etc.</p>
+    <textarea class="notes-area" id="group-notes" placeholder="Escrevam aqui notas para o grupo (guarda automaticamente)…"></textarea>
+    <div class="save-status" id="notes-status"></div>
+  </div>
+
+  <div class="block">
+    <h3>🔄 Partilhar alterações</h3>
+    <p class="lead">Sem servidor partilhado, cada telemóvel guarda as suas próprias marcações. Gerem um código aqui e enviem por WhatsApp — quem receber cola o código e importa.</p>
+    <div class="subgroup">
+      <h4>Exportar as minhas alterações</h4>
+      <button class="reset-btn" id="export-btn" style="background:rgba(47,158,110,.18);border-color:rgba(47,158,110,.4);color:#bfe3cf;">📤 Gerar código para partilhar</button>
+      <textarea class="notes-area" id="export-output" readonly style="margin-top:10px;display:none;font-size:11px;min-height:80px;"></textarea>
+      <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;">
+        <button class="reset-btn" id="copy-export-btn" style="display:none;">📋 Copiar código</button>
+        <button class="reset-btn" id="download-export-btn" style="display:none;">⬇️ Descarregar ficheiro</button>
+      </div>
+      <div class="save-status" id="export-status"></div>
+    </div>
+    <div class="subgroup">
+      <h4>Importar alterações de alguém</h4>
+      <textarea class="notes-area" id="import-input" placeholder="Colem aqui o código recebido…" style="min-height:80px;font-size:11px;"></textarea>
+      <div style="margin-top:8px;">
+        <label class="pill" style="cursor:pointer;">📎 Ou escolher ficheiro <input type="file" id="import-file" accept=".txt,.json" style="display:none;"></label>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap;">
+        <button class="reset-btn" id="import-merge-btn" style="background:rgba(47,158,110,.18);border-color:rgba(47,158,110,.4);color:#bfe3cf;">➕ Juntar só marcações ✓</button>
+        <button class="reset-btn" id="import-replace-btn">♻️ Substituir tudo</button>
+      </div>
+      <div class="save-status" id="import-status"></div>
+      <div class="note">💡 <b>"Juntar"</b> soma as vossas marcações às da outra pessoa, sem tocar nas vossas notas ou edições ao roteiro. <b>"Substituir"</b> troca tudo pelo que vier no código.</div>
+    </div>
+  </div>
+
+  <div class="block">
+    <h3>💶 Moeda & pagamentos</h3>
+    <ul class="checklist">
+      <li>Moeda: Escudo Cabo-verdiano (CVE) — câmbio fixo ao euro, ~110,265 CVE = 1€</li>
+      <li>Nos resorts all inclusive, cartão costuma ser aceite sem problema; fora deles, levem sempre dinheiro (CVE ou euros)</li>
+      <li>Multibanco disponível nos aeroportos e nas cidades principais, mas escasso nas zonas mais rurais (Santo Antão, interior de Santiago)</li>
+      <li>Gorjetas não são obrigatórias mas são bem-vindas para guias e staff dos resorts</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h3>🛂 Documentos & saúde</h3>
+    <ul class="checklist">
+      <li>Passaporte válido — confirmar se a vossa nacionalidade precisa de visto ou eVisa antes da viagem (portugueses e cidadãos da UE, confirmar regras atualizadas)</li>
+      <li>Vacina da febre amarela só é exigida a quem vem de país com risco de transmissão — não é obrigatória para viajantes vindos de Portugal</li>
+      <li>Água engarrafada recomendada fora dos resorts</li>
+      <li>Seguro de viagem com cobertura médica fortemente recomendado</li>
+      <li>Proteção solar forte — sol intenso durante todo o ano (350 dias de sol/ano em Sal e Boa Vista)</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h3>🌐 Sites relevantes</h3>
+    <div class="links-grid">
+      <div class="link-row"><div><div class="ln">Visit Cabo Verde</div><div class="ld">Portal oficial de turismo</div></div><a class="go" href="https://visitcaboverde.com" target="_blank" rel="noopener">Abrir ↗</a></div>
+      <div class="link-row"><div><div class="ln">Cabo Verde Airlines</div><div class="ld">Voos internacionais e domésticos</div></div><a class="go" href="https://www.caboverdeairlines.com" target="_blank" rel="noopener">Abrir ↗</a></div>
+      <div class="link-row"><div><div class="ln">e-Visa Cabo Verde</div><div class="ld">Pedido de visto eletrónico online</div></div><a class="go" href="https://www.evisacaboverde.com" target="_blank" rel="noopener">Abrir ↗</a></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <h3>🚨 Contactos de emergência</h3>
+    <div class="place-list">
+      <div class="place"><div class="ptext"><div class="pn">Emergência geral</div><div class="pd">Válido em todo o país</div></div><div class="pp">112</div></div>
+      <div class="place"><div class="ptext"><div class="pn">Polícia Nacional</div></div><div class="pp">132</div></div>
+      <div class="place"><div class="ptext"><div class="pn">Bombeiros</div></div><div class="pp">131</div></div>
+      <div class="place"><div class="ptext"><div class="pn">Embaixada de Portugal — Praia</div><div class="pd">Casos graves; resorts costumam ter contacto de emergência 24h</div></div><div class="pp">Verificar contacto atual</div></div>
+    </div>
+    <div class="note">💳 Guardem também os números de apoio a cartões bancários (bloqueio em caso de perda/roubo) antes de viajar.</div>
+  </div>
+
+  <div class="block">
+    <h3>🗣️ Frases úteis em Kriolu</h3>
+    <table class="phrase-table">
+      <tr><td>Olá / Bom dia</td><td class="fr">Odju / Bon dia</td></tr>
+      <tr><td>Por favor</td><td class="fr">Pur favor</td></tr>
+      <tr><td>Obrigado(a)</td><td class="fr">Obrigadu / Obrigada</td></tr>
+      <tr><td>Como está?</td><td class="fr">Modi ki bu sta?</td></tr>
+      <tr><td>Estou bem</td><td class="fr">N sta dretu</td></tr>
+      <tr><td>Quanto custa?</td><td class="fr">Kantu ki el custa?</td></tr>
+      <tr><td>Onde é a casa de banho?</td><td class="fr">Undi ki kasa di banhu sta?</td></tr>
+      <tr><td>Delicioso</td><td class="fr">Sabi</td></tr>
+      <tr><td>Até logo</td><td class="fr">Te logu</td></tr>
+    </table>
+    <div class="note">🇵🇹 A língua oficial é o português — o kriolu (crioulo cabo-verdiano) é falado no dia-a-dia, com pequenas variações entre ilhas.</div>
+  </div>
+
+  <div class="block">
+    <h3>🧳 Lista de bagagem</h3>
+    <p class="lead">Marquem os vistos à medida que forem preparando as malas.</p>
+    <div class="place-list" id="list-bagagem"></div>
+  </div>
+
+  <div class="block">
+    <h3>⚙️ Reset</h3>
+    <p class="lead">As marcações e as notas ficam guardadas automaticamente neste telemóvel.</p>
+    <button class="reset-btn" id="reset-all">Repor todas as marcações</button>
+  </div>
+
+</div>
+
+<footer>Guia de viagem · 7 dias · 3 alternativas de ilha · datas, preços e requisitos de visto a reconfirmar mais perto da viagem</footer>
+
+<script>
+/* ==================================================================
+   DADOS: 3 ALTERNATIVAS
+================================================================== */
+const DAYS = ['d1','d2','d3','d4','d5','d6','d7'];
+
+const ROUTES = {
+A: {
+  name: 'Ilha do Sal',
+  headers: {
+    d1: {tag:'Chegada', h2:'Chegada à Ilha do Sal', sub:'Voo até ao Aeroporto Amílcar Cabral (SID), transfer para Santa Maria, check-in all inclusive'},
+    d2: {tag:'Praia & Resort', h2:'Primeiro dia de praia', sub:'Adaptação ao ritmo da ilha — piscinas, Praia de Santa Maria e buffet do resort'},
+    d3: {tag:'Excursão', h2:'Salinas de Pedra de Lume & Buracona', sub:'Meio-dia de excursão aos ícones geológicos do Sal'},
+    d4: {tag:'Dia livre', h2:'Desportos aquáticos & relax', sub:'Dia inteiro no resort — kitesurf, snorkel, SPA opcional'},
+    d5: {tag:'Excursão', h2:'Deserto de Viana & Terra Boa', sub:'Excursão de jipe 4x4 de dia inteiro ao interior desértico'},
+    d6: {tag:'Mar', h2:'Catamaran & tartarugas', sub:'Passeio de barco com snorkel e pôr do sol'},
+    d7: {tag:'Partida', h2:'Manhã livre & regresso', sub:'Últimas horas de praia, check-out e transfer para o aeroporto'},
+  },
+  days: {
+    d1:[
+      {t:'transport', time:'—', title:'✈️ Voo até à Ilha do Sal (SID)', desc:'Aeroporto Internacional Amílcar Cabral, em Espargos.'},
+      {t:'transport', time:'—', title:'Transfer aeroporto → resort', desc:'~15–20 min até Santa Maria, normalmente incluído no pacote.'},
+      {t:'normal', time:'—', title:'Check-in no resort', desc:'Pulseira all inclusive, apresentação das instalações e horários.'},
+      {t:'tip', time:'—', title:'Reunião de boas-vindas com a animação', desc:'Horários de refeições, bares e atividades da semana.'},
+      {t:'food', time:'—', title:'Jantar buffet de boas-vindas', desc:'Primeira refeição incluída no all inclusive.'},
+      {t:'tip', time:'—', title:'Noite livre', desc:'Bar do resort ou música ao vivo, conforme a programação.'},
+    ],
+    d2:[
+      {t:'food', time:'—', title:'Pequeno-almoço buffet', desc:''},
+      {t:'normal', time:'—', title:'Manhã de praia', desc:'Praia de Santa Maria — areal branco e água turquesa, a 2 km de comprimento.'},
+      {t:'food', time:'—', title:'Almoço buffet no resort', desc:''},
+      {t:'tip', time:'—', title:'Tarde livre — piscinas & desportos aquáticos', desc:'Stand-up paddle e vela costumam estar incluídos no all inclusive básico.'},
+      {t:'food', time:'—', title:'Jantar temático — noite cabo-verdiana', desc:'Com música ao vivo, se disponível no resort.'},
+      {t:'tip', time:'—', title:'Animação noturna', desc:'Espetáculo do resort ou noite livre.'},
+    ],
+    d3:[
+      {t:'food', time:'—', title:'Pequeno-almoço buffet', desc:''},
+      {t:'transport', time:'—', title:'Excursão às Salinas de Pedra de Lume', desc:'Cratera vulcânica com lago hipersalgado — banho flutuante opcional.'},
+      {t:'normal', time:'—', title:'Buracona (Olho Azul)', desc:'Piscina natural com um efeito de luz turquesa característico ao meio-dia.'},
+      {t:'food', time:'—', title:'Almoço', desc:'Incluído na excursão ou buffet do resort ao regresso.'},
+      {t:'tip', time:'—', title:'Tarde livre no resort', desc:''},
+      {t:'food', time:'—', title:'Jantar buffet', desc:''},
+    ],
+    d4:[
+      {t:'food', time:'—', title:'Pequeno-almoço buffet', desc:''},
+      {t:'tip', time:'—', title:'Manhã livre — kitesurf / windsurf', desc:'Sal é destino mundial de kitesurf; aulas de iniciação disponíveis como extra.'},
+      {t:'food', time:'—', title:'Almoço buffet', desc:''},
+      {t:'tip', time:'—', title:'Tarde de SPA / snorkel na praia', desc:'Tratamentos de SPA normalmente pagos à parte.'},
+      {t:'food', time:'—', title:'Jantar à la carte', desc:'Reservar restaurante temático do resort com antecedência, se incluído no pacote.'},
+      {t:'normal', time:'—', title:'Noite livre', desc:''},
+    ],
+    d5:[
+      {t:'food', time:'—', title:'Pequeno-almoço cedo', desc:''},
+      {t:'transport', time:'—', title:'Excursão Deserto de Viana (jipe 4x4)', desc:'Dunas brancas no interior da ilha, paisagem lunar.'},
+      {t:'normal', time:'—', title:'Terra Boa & vista sobre Pedra de Lume', desc:''},
+      {t:'food', time:'—', title:'Almoço', desc:'Normalmente incluído na excursão (piquenique ou paragem local).'},
+      {t:'normal', time:'—', title:'Regresso ao resort ao final da tarde', desc:''},
+      {t:'food', time:'—', title:'Jantar buffet', desc:''},
+    ],
+    d6:[
+      {t:'food', time:'—', title:'Pequeno-almoço buffet', desc:''},
+      {t:'transport', time:'—', title:'Passeio de catamaran', desc:'Saída de Santa Maria, ao longo da costa sul da ilha.'},
+      {t:'normal', time:'—', title:'Snorkel & possível avistamento de tartarugas', desc:'Sal tem uma das maiores concentrações de tartarugas-comuns do mundo.'},
+      {t:'food', time:'—', title:'Almoço a bordo ou buffet no regresso', desc:''},
+      {t:'tip', time:'—', title:'Pôr do sol na praia', desc:''},
+      {t:'food', time:'—', title:'Jantar de despedida', desc:''},
+    ],
+    d7:[
+      {t:'food', time:'—', title:'Pequeno-almoço buffet', desc:''},
+      {t:'normal', time:'—', title:'Manhã livre de praia', desc:'Aproveitem até à hora de check-out.'},
+      {t:'normal', time:'—', title:'Check-out', desc:''},
+      {t:'transport', time:'—', title:'Transfer para o aeroporto', desc:''},
+      {t:'transport', time:'—', title:'✈️ Voo de regresso', desc:''},
+    ],
+  }
+},
+B: {
+  name: 'Boa Vista',
+  headers: {
+    d1: {tag:'Chegada', h2:'Chegada a Boa Vista', sub:'Voo até ao Aeroporto de Rabil (BVC), transfer para Sal Rei, check-in all inclusive'},
+    d2: {tag:'Praia & Resort', h2:'Praia de Chaves', sub:'Uma das praias mais extensas e selvagens do arquipélago'},
+    d3: {tag:'Excursão', h2:'Deserto de Viana & Igreja de Rabil', sub:'Excursão de jipe pelas dunas do interior e pela vila histórica de Rabil'},
+    d4: {tag:'Dia livre', h2:'Dia livre no resort', sub:'Piscinas, desportos aquáticos e SPA opcional'},
+    d5: {tag:'Mar', h2:'Ilhéu do Baluarte & tartarugas', sub:'Passeio de barco com snorkel em Praia de Ervatão'},
+    d6: {tag:'Excursão', h2:'Naufrágio Cabo Santa Maria', sub:'Jipe 4x4 até ao icónico naufrágio de 1968, na Praia de Atalanta'},
+    d7: {tag:'Partida', h2:'Manhã livre & regresso', sub:'Últimas horas de resort, check-out e transfer para o aeroporto'},
+  },
+  days: {
+    d1:[
+      {t:'transport', time:'—', title:'✈️ Voo até Boa Vista (BVC)', desc:'Aeroporto Internacional de Rabil.'},
+      {t:'transport', time:'—', title:'Transfer aeroporto → resort', desc:'~5–15 min até Sal Rei ou Praia de Chaves.'},
+      {t:'normal', time:'—', title:'Check-in no resort', desc:'Pulseira all inclusive e apresentação das instalações.'},
+      {t:'tip', time:'—', title:'Reunião de boas-vindas com a animação', desc:'Horários de refeições e atividades da semana.'},
+      {t:'food', time:'—', title:'Jantar buffet de boas-vindas', desc:''},
+      {t:'tip', time:'—', title:'Noite livre', desc:'Bar do resort.'},
+    ],
+    d2:[
+      {t:'food', time:'—', title:'Pequeno-almoço buffet', desc:''},
+      {t:'normal', time:'—', title:'Manhã na Praia de Chaves', desc:'Uma das praias mais extensas de Cabo Verde, ainda pouco urbanizada.'},
+      {t:'food', time:'—', title:'Almoço buffet no resort', desc:''},
+      {t:'tip', time:'—', title:'Tarde livre — piscinas & desportos aquáticos', desc:''},
+      {t:'food', time:'—', title:'Jantar temático', desc:'Noite cabo-verdiana com música, se disponível.'},
+      {t:'tip', time:'—', title:'Animação noturna', desc:''},
+    ],
+    d3:[
+      {t:'food', time:'—', title:'Pequeno-almoço buffet', desc:''},
+      {t:'transport', time:'—', title:'Excursão jipe 4x4 — Deserto de Viana', desc:'Dunas de areia branca que avançam sobre a paisagem desértica.'},
+      {t:'normal', time:'—', title:'Igreja de Rabil & vila histórica', desc:'Uma das povoações mais antigas da ilha.'},
+      {t:'food', time:'—', title:'Almoço', desc:'Incluído na excursão ou no regresso ao resort.'},
+      {t:'tip', time:'—', title:'Tarde livre no resort', desc:''},
+      {t:'food', time:'—', title:'Jantar buffet', desc:''},
+    ],
+    d4:[
+      {t:'food', time:'—', title:'Pequeno-almoço buffet', desc:''},
+      {t:'tip', time:'—', title:'Manhã livre — piscinas & praia', desc:''},
+      {t:'food', time:'—', title:'Almoço buffet', desc:''},
+      {t:'tip', time:'—', title:'Tarde de SPA / desportos aquáticos', desc:'Windsurf e bodyboard costumam estar disponíveis.'},
+      {t:'food', time:'—', title:'Jantar à la carte', desc:'Reservar restaurante temático do resort, se incluído.'},
+      {t:'normal', time:'—', title:'Noite livre', desc:''},
+    ],
+    d5:[
+      {t:'food', time:'—', title:'Pequeno-almoço buffet', desc:''},
+      {t:'transport', time:'—', title:'Passeio de barco ao Ilhéu do Baluarte', desc:'Reserva natural marinha ao largo de Sal Rei.'},
+      {t:'normal', time:'—', title:'Snorkel na Praia de Ervatão', desc:'Boa visibilidade e possível avistamento de tartarugas.'},
+      {t:'food', time:'—', title:'Almoço a bordo ou buffet no regresso', desc:''},
+      {t:'tip', time:'—', title:'Tarde livre no resort', desc:''},
+      {t:'food', time:'—', title:'Jantar buffet', desc:''},
+    ],
+    d6:[
+      {t:'food', time:'—', title:'Pequeno-almoço cedo', desc:''},
+      {t:'transport', time:'—', title:'Excursão jipe 4x4 — Naufrágio Cabo Santa Maria', desc:'Navio encalhado em 1968 na Praia de Atalanta, uma das imagens mais icónicas da ilha.'},
+      {t:'normal', time:'—', title:'Paragem em vila piscatória local', desc:'Bofareira ou zona próxima, consoante a excursão.'},
+      {t:'food', time:'—', title:'Almoço', desc:'Incluído na excursão.'},
+      {t:'normal', time:'—', title:'Regresso ao resort', desc:''},
+      {t:'food', time:'—', title:'Jantar de despedida', desc:''},
+    ],
+    d7:[
+      {t:'food', time:'—', title:'Pequeno-almoço buffet', desc:''},
+      {t:'normal', time:'—', title:'Manhã livre de praia', desc:''},
+      {t:'normal', time:'—', title:'Check-out', desc:''},
+      {t:'transport', time:'—', title:'Transfer para o aeroporto', desc:''},
+      {t:'transport', time:'—', title:'✈️ Voo de regresso', desc:''},
+    ],
+  }
+},
+C: {
+  name: 'Santiago & São Vicente',
+  headers: {
+    d1: {tag:'Praia (Santiago)', h2:'Chegada à Praia', sub:'Voo até ao Aeroporto Nelson Mandela (RAI), check-in no centro da capital'},
+    d2: {tag:'Santiago', h2:'Cidade Velha & Tarrafal', sub:'Património Mundial UNESCO e uma das melhores praias de Santiago'},
+    d3: {tag:'Santiago', h2:'Serra Malagueta & mercado de Assomada', sub:'Trilho de montanha e cultura rural do interior da ilha'},
+    d4: {tag:'Praia → Mindelo', h2:'Voo doméstico para São Vicente', sub:'Manhã livre na Praia, tarde a explorar Mindelo'},
+    d5: {tag:'São Vicente', h2:'Mindelo & Monte Verde', sub:'Cidade colonial, música e vista panorâmica sobre a ilha'},
+    d6: {tag:'Santo Antão', h2:'Excursão a Santo Antão', sub:'Travessia de barco e trilhos por Ribeira Grande, Paul e Fontainhas'},
+    d7: {tag:'Partida', h2:'Manhã livre em Mindelo & regresso', sub:'Últimas compras e voo de regresso (via Praia ou Sal, consoante a ligação)'},
+  },
+  days: {
+    d1:[
+      {t:'transport', time:'—', title:'✈️ Voo até à Praia (RAI)', desc:'Aeroporto Internacional Nelson Mandela.'},
+      {t:'transport', time:'—', title:'Transfer aeroporto → hotel', desc:'~10 min até ao centro da Praia (Plateau).'},
+      {t:'normal', time:'—', title:'Check-in no hotel', desc:'Regime pequeno-almoço — não há all inclusive nesta ilha.'},
+      {t:'normal', time:'—', title:'Passeio pelo Plateau', desc:'Centro histórico da capital, praça Alexandre Albuquerque.'},
+      {t:'food', time:'—', title:'Jantar de boas-vindas', desc:'Restaurante local no Plateau.'},
+    ],
+    d2:[
+      {t:'food', time:'—', title:'Pequeno-almoço', desc:''},
+      {t:'transport', time:'—', title:'Excursão a Cidade Velha', desc:'Antiga capital colonial, Património Mundial da UNESCO — primeira cidade europeia construída nos trópicos.'},
+      {t:'normal', time:'—', title:'Fortaleza Real de São Filipe & Rua Banana', desc:'Vistas sobre o oceano e arquitetura colonial.'},
+      {t:'food', time:'—', title:'Almoço em Cidade Velha', desc:'Peixe fresco em restaurante local.'},
+      {t:'transport', time:'—', title:'Praia de Tarrafal', desc:'Uma das praias mais bonitas de Santiago, a norte da ilha.'},
+      {t:'food', time:'—', title:'Jantar de regresso à Praia', desc:''},
+    ],
+    d3:[
+      {t:'food', time:'—', title:'Pequeno-almoço', desc:''},
+      {t:'transport', time:'—', title:'Trilho na Serra Malagueta', desc:'Parque natural com trilhos entre montanhas e vales verdejantes.'},
+      {t:'food', time:'—', title:'Almoço rural', desc:'Cozinha caseira num restaurante local da serra.'},
+      {t:'normal', time:'—', title:'Mercado de Assomada', desc:'Um dos mercados mais coloridos e animados do interior de Santiago.'},
+      {t:'normal', time:'—', title:'Regresso à Praia', desc:''},
+      {t:'food', time:'—', title:'Jantar', desc:''},
+    ],
+    d4:[
+      {t:'food', time:'—', title:'Pequeno-almoço', desc:''},
+      {t:'normal', time:'—', title:'Manhã livre na Praia', desc:'Últimas compras ou visita ao Mercado Municipal.'},
+      {t:'normal', time:'—', title:'Check-out', desc:''},
+      {t:'transport', time:'—', title:'✈️ Voo doméstico Praia → Mindelo', desc:'CV Interilhas / Binter, ~45 min.'},
+      {t:'transport', time:'—', title:'Transfer aeroporto → hotel em Mindelo', desc:''},
+      {t:'food', time:'—', title:'Jantar em Mindelo', desc:'Cidade conhecida pela morna e por Cesária Évora.'},
+    ],
+    d5:[
+      {t:'food', time:'—', title:'Pequeno-almoço', desc:''},
+      {t:'normal', time:'—', title:'Passeio pelo centro histórico de Mindelo', desc:'Mercado Municipal, Torre de Belém local e a marginal.'},
+      {t:'food', time:'—', title:'Almoço à beira-mar', desc:''},
+      {t:'transport', time:'—', title:'Monte Verde', desc:'Ponto mais alto da ilha, com vista panorâmica sobre São Vicente.'},
+      {t:'normal', time:'—', title:'Baía das Gatas', desc:'Piscina natural formada por um cordão de rocha vulcânica.'},
+      {t:'food', time:'—', title:'Jantar com música ao vivo', desc:'Mindelo tem uma cena musical muito viva — morna e coladeira.'},
+    ],
+    d6:[
+      {t:'transport', time:'—', title:'Travessia de barco para Santo Antão', desc:'~1h a partir do porto de Mindelo até Porto Novo.'},
+      {t:'normal', time:'—', title:'Ribeira Grande & Paul', desc:'Vales verdejantes, terraços agrícolas e a estrada de Corda com vistas espetaculares.'},
+      {t:'food', time:'—', title:'Almoço num restaurante local', desc:'Comida caseira e grogue de produção artesanal.'},
+      {t:'normal', time:'—', title:'Vila de Fontainhas', desc:'Uma das vilas mais fotografadas de Cabo Verde, encaixada num vale.'},
+      {t:'transport', time:'—', title:'Regresso de barco a Mindelo', desc:''},
+      {t:'food', time:'—', title:'Jantar de despedida em Mindelo', desc:''},
+    ],
+    d7:[
+      {t:'food', time:'—', title:'Pequeno-almoço', desc:''},
+      {t:'normal', time:'—', title:'Manhã livre em Mindelo', desc:'Últimas compras — artesanato e discos de morna.'},
+      {t:'normal', time:'—', title:'Check-out', desc:''},
+      {t:'transport', time:'—', title:'Transfer para o aeroporto Cesária Évora', desc:''},
+      {t:'transport', time:'—', title:'✈️ Voo de regresso', desc:'Via Praia ou Sal, consoante a ligação escolhida.'},
+    ],
+  }
+}
+};
+
+/* ==================================================================
+   DADOS: LISTAS (atrações, comida, bagagem)
+================================================================== */
+const ATRACOES_SAL = [
+ {id:'a-santamaria', n:'Praia de Santa Maria', d:'2 km de areal branco, o postal do Sal'},
+ {id:'a-pedradelume', n:'Salinas de Pedra de Lume', d:'Cratera vulcânica com lago hipersalgado, banho flutuante'},
+ {id:'a-buracona', n:'Buracona (Olho Azul)', d:'Piscina natural com efeito de luz turquesa ao meio-dia'},
+ {id:'a-desertoviana', n:'Deserto de Viana', d:'Dunas brancas no interior da ilha, paisagem lunar'},
+ {id:'a-palmeira', n:'Vila de Palmeira', d:'Porto piscatório pitoresco com mercado tradicional'},
+ {id:'a-pontapreta', n:'Ponta Preta', d:'Spot mundial de kitesurf e windsurf'},
+];
+const ATRACOES_BOAVISTA = [
+ {id:'a-chaves', n:'Praia de Chaves', d:'Uma das praias mais extensas e selvagens do arquipélago'},
+ {id:'a-naufragio', n:'Naufrágio Cabo Santa Maria', d:'Navio encalhado em 1968 na Praia de Atalanta, imagem icónica'},
+ {id:'a-desertovianabv', n:'Deserto de Viana', d:'Dunas que avançam sobre a paisagem, muito fotografado'},
+ {id:'a-baluarte', n:'Ilhéu do Baluarte', d:'Reserva natural marinha, boa para snorkel'},
+ {id:'a-rabil', n:'Vila de Rabil & Igreja', d:'Uma das povoações mais antigas da ilha'},
+ {id:'a-tartarugas', n:'Praias de desova de tartarugas', d:'Uma das maiores concentrações do mundo (época de verão, jun–out)'},
+];
+const ATRACOES_SANTIAGO = [
+ {id:'a-cidadevelha', n:'Cidade Velha', d:'Património Mundial UNESCO, primeira cidade europeia construída nos trópicos'},
+ {id:'a-forte', n:'Fortaleza Real de São Filipe', d:'Vistas sobre o oceano e arquitetura colonial'},
+ {id:'a-tarrafal', n:'Praia de Tarrafal', d:'Uma das praias mais bonitas de Santiago, a norte da ilha'},
+ {id:'a-malagueta', n:'Serra Malagueta', d:'Parque natural com trilhos entre montanhas e vales verdejantes'},
+ {id:'a-assomada', n:'Mercado de Assomada', d:'Um dos mercados mais coloridos e animados do interior'},
+ {id:'a-plateau', n:'Plateau (centro histórico da Praia)', d:'Praça Alexandre Albuquerque e arquitetura colonial'},
+];
+const ATRACOES_SAOVICENTE = [
+ {id:'a-mindelo', n:'Centro histórico de Mindelo', d:'Mercado Municipal e a marginal, cidade da morna e de Cesária Évora'},
+ {id:'a-monteverde', n:'Monte Verde', d:'Ponto mais alto de São Vicente, vista panorâmica sobre a ilha'},
+ {id:'a-baiagatas', n:'Baía das Gatas', d:'Piscina natural formada por cordão de rocha vulcânica'},
+ {id:'a-ribeiragrande', n:'Ribeira Grande & Paul (Santo Antão)', d:'Vales verdejantes e terraços agrícolas'},
+ {id:'a-fontainhas', n:'Vila de Fontainhas (Santo Antão)', d:'Uma das vilas mais fotografadas de Cabo Verde'},
+ {id:'a-corda', n:'Estrada de Corda (Santo Antão)', d:'Uma das estradas de montanha mais espetaculares do arquipélago'},
+];
+
+const FOOD_SAL = [
+ {id:'f-sal1', n:'Restaurante Ponta Preta', d:'Peixe grelhado à beira-mar, ambiente informal', p:'~15–20€'},
+ {id:'f-sal2', n:'Restaurante Nirvana', d:'Cozinha internacional e cabo-verdiana, boa para grupos', p:'~18–25€'},
+ {id:'f-sal3', n:'Restaurante Bar Nortada', d:'Junto à praia, bom para o pôr do sol', p:'~15–22€'},
+];
+const FOOD_BOAVISTA = [
+ {id:'f-bv1', n:'Restaurante Bofarreira', d:'Peixe fresco na vila piscatória de Sal Rei', p:'~15–20€'},
+ {id:'f-bv2', n:'Restaurante Djabraba', d:'Cozinha cabo-verdiana tradicional', p:'~15–20€'},
+ {id:'f-bv3', n:'Restaurante Papagayo Beach', d:'Junto à Praia de Chaves', p:'~18–25€'},
+];
+const FOOD_PRAIA = [
+ {id:'f-pr1', n:'Restaurante Quintal da Música', d:'Cozinha cabo-verdiana com música ao vivo, no Plateau', p:'~12–18€'},
+ {id:'f-pr2', n:'Cais do Sodré (Praia)', d:'Peixe fresco à beira-mar', p:'~15–20€'},
+];
+const FOOD_MINDELO = [
+ {id:'f-mi1', n:'Restaurante Pica Pau', d:'Clássico de Mindelo, cozinha caseira', p:'~10–15€'},
+ {id:'f-mi2', n:'Café Lisboa', d:'Ambiente histórico na Praça Nova, bom para petiscar', p:'~8–14€'},
+ {id:'f-mi3', n:'Restaurante Chave d\'Ouro', d:'Peixe e marisco, boa vista sobre a baía', p:'~15–22€'},
+];
+
+const BAGAGEM = [
+ {id:'b1', n:'Roupa leve de verão', d:'Clima quente durante todo o ano'},
+ {id:'b2', n:'Fato de banho (2 ou mais)', d:'Para alternar entre praia e piscina'},
+ {id:'b3', n:'Protetor solar forte', d:'FPS 50+, o sol é intenso mesmo com vento'},
+ {id:'b4', n:'Chapéu / boné e óculos de sol', d:''},
+ {id:'b5', n:'Sandálias e calçado confortável', d:'Para excursões de jipe e trilhos'},
+ {id:'b6', n:'Roupa leve para a noite', d:'Vento pode refrescar ao final do dia'},
+ {id:'b7', n:'Adaptador de tomada tipo C/F', d:'Voltagem 220V, igual à europeia'},
+ {id:'b8', n:'Repelente de insetos', d:''},
+ {id:'b9', n:'Documentos (passaporte, seguro de viagem)', d:'Confirmar necessidade de visto/eVisa antes da viagem'},
+ {id:'b10', n:'Powerbank', d:'Para fotos e excursões o dia todo'},
+ {id:'b11', n:'Medicamentos pessoais', d:''},
+ {id:'b12', n:'Casaco leve', d:'Para o interior de Santo Antão ou Serra Malagueta, mais fresco (Alternativa 3)'},
+];
+
+/* ==================================================================
+   STATE / STORAGE — localStorage do telemóvel
+================================================================== */
+let tripState = {visited:{}, notes:'', route:'A', itinerary:{}};
+const LOCAL_KEY = 'cabo-verde-all-inclusive-2026';
+let editingDay = null;
+let editBuffer = [];
+
+function initStorage(){ loadLocal(); }
+
+function loadLocal(){
+  try{
+    const raw = localStorage.getItem(LOCAL_KEY);
+    if(raw){ tripState = JSON.parse(raw); }
+  }catch(e){ /* mantém defaults */ }
+  if(!tripState.visited) tripState.visited = {};
+  if(!tripState.itinerary) tripState.itinerary = {};
+  if(!tripState.route) tripState.route = 'A';
+  if(typeof tripState.notes !== 'string') tripState.notes = '';
+  renderAll();
+}
+
+async function persist(){
+  try{ localStorage.setItem(LOCAL_KEY, JSON.stringify(tripState)); }
+  catch(e){ /* falha silenciosa */ }
+}
+
+function toggleVisited(id, el){
+  tripState.visited[id] = !tripState.visited[id];
+  if(el) el.classList.toggle('on', !!tripState.visited[id]);
+  persist();
+}
+
+/* ==================================================================
+   ALTERNATIVAS: seleção
+================================================================== */
+function selectRoute(key){
+  tripState.route = key;
+  persist();
+  renderAll();
+  switchTab('d1');
+}
+
+function getDayItems(dayKey){
+  const route = tripState.route || 'A';
+  const custom = tripState.itinerary && tripState.itinerary[route] && tripState.itinerary[route][dayKey];
+  return custom || ROUTES[route].days[dayKey];
+}
+
+/* ==================================================================
+   EDIÇÃO DO ROTEIRO DIÁRIO
+================================================================== */
+function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+function startEdit(dayKey){
+  editingDay = dayKey;
+  editBuffer = JSON.parse(JSON.stringify(getDayItems(dayKey)));
+  renderEditUI();
+}
+function renderEditUI(){
+  const el = document.getElementById('tl-' + editingDay);
+  el.innerHTML = editBuffer.map((it,i) => `
+    <div class="edit-card">
+      <div class="edit-row-top">
+        <input class="ei time" value="${esc(it.time)}" oninput="editBuffer[${i}].time=this.value" placeholder="—">
+        <select class="ei" onchange="editBuffer[${i}].t=this.value">
+          <option value="normal" ${it.t==='normal'?'selected':''}>Normal</option>
+          <option value="transport" ${it.t==='transport'?'selected':''}>Transporte</option>
+          <option value="food" ${it.t==='food'?'selected':''}>Comida</option>
+          <option value="tip" ${it.t==='tip'?'selected':''}>Dica</option>
+        </select>
+        <button class="ei-del" onclick="removeEditRow(${i})">🗑️</button>
+      </div>
+      <input class="ei ei-title" value="${esc(it.title)}" oninput="editBuffer[${i}].title=this.value" placeholder="Título da atividade">
+      <textarea class="ei ei-desc" oninput="editBuffer[${i}].desc=this.value" placeholder="Descrição">${esc(it.desc)}</textarea>
+    </div>
+  `).join('') + `
+    <button id="add-row-btn" onclick="addEditRow()">+ Adicionar atividade</button>
+    <div class="edit-actions">
+      <button id="save-edit-btn" onclick="saveEdit()">💾 Guardar</button>
+      <button id="cancel-edit-btn" onclick="cancelEdit()">Cancelar</button>
+      <button id="reset-edit-btn" onclick="resetDayToOriginal()">↺ Repor original</button>
+    </div>`;
+}
+function addEditRow(){ editBuffer.push({t:'normal', time:'', title:'', desc:''}); renderEditUI(); }
+function removeEditRow(i){ editBuffer.splice(i,1); renderEditUI(); }
+function saveEdit(){
+  const route = tripState.route || 'A';
+  if(!tripState.itinerary) tripState.itinerary = {};
+  if(!tripState.itinerary[route]) tripState.itinerary[route] = {};
+  tripState.itinerary[route][editingDay] = editBuffer;
+  persist();
+  const d = editingDay; editingDay = null;
+  renderTimeline(d);
+}
+function cancelEdit(){ const d = editingDay; editingDay = null; renderTimeline(d); }
+function resetDayToOriginal(){
+  const route = tripState.route || 'A';
+  if(tripState.itinerary && tripState.itinerary[route]){ delete tripState.itinerary[route][editingDay]; }
+  persist();
+  const d = editingDay; editingDay = null;
+  renderTimeline(d);
+}
+
+/* ==================================================================
+   EXPORTAR / IMPORTAR — partilha manual entre telemóveis
+================================================================== */
+function encodeState(state){ return btoa(unescape(encodeURIComponent(JSON.stringify(state)))); }
+function decodeState(code){
+  try{ return JSON.parse(decodeURIComponent(escape(atob(code.trim())))); }
+  catch(e){ return null; }
+}
+function sanitizeState(s){
+  if(!s || typeof s !== 'object') return null;
+  if(!s.visited || typeof s.visited !== 'object') s.visited = {};
+  if(!s.itinerary || typeof s.itinerary !== 'object') s.itinerary = {};
+  if(!['A','B','C'].includes(s.route)) s.route = 'A';
+  if(typeof s.notes !== 'string') s.notes = '';
+  return s;
+}
+
+function doExport(){
+  const code = encodeState(tripState);
+  const out = document.getElementById('export-output');
+  out.value = code;
+  out.style.display = 'block';
+  document.getElementById('copy-export-btn').style.display = 'inline-block';
+  document.getElementById('download-export-btn').style.display = 'inline-block';
+  document.getElementById('export-status').textContent = 'Código gerado — copiem e enviem por WhatsApp.';
+}
+function copyExport(){
+  const out = document.getElementById('export-output');
+  out.select();
+  out.setSelectionRange(0, 999999);
+  const statusEl = document.getElementById('export-status');
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(out.value)
+      .then(() => { statusEl.textContent = '✅ Copiado! Colem no WhatsApp.'; })
+      .catch(() => { document.execCommand('copy'); statusEl.textContent = '✅ Copiado! Colem no WhatsApp.'; });
+  } else {
+    document.execCommand('copy');
+    statusEl.textContent = '✅ Copiado! Colem no WhatsApp.';
+  }
+}
+function downloadExport(){
+  const code = document.getElementById('export-output').value;
+  const blob = new Blob([code], {type:'text/plain'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'cabo-verde-alteracoes.txt';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
+function importReplace(){
+  const statusEl = document.getElementById('import-status');
+  const raw = document.getElementById('import-input').value;
+  const imported = sanitizeState(decodeState(raw));
+  if(!imported){ statusEl.textContent = '⚠️ Código inválido — verifiquem se copiaram tudo.'; return; }
+  tripState = imported;
+  persist();
+  renderAll();
+  statusEl.textContent = '✅ Importado — todo o estado foi substituído.';
+}
+function importMerge(){
+  const statusEl = document.getElementById('import-status');
+  const raw = document.getElementById('import-input').value;
+  const imported = sanitizeState(decodeState(raw));
+  if(!imported){ statusEl.textContent = '⚠️ Código inválido — verifiquem se copiaram tudo.'; return; }
+  const merged = {...tripState.visited};
+  Object.keys(imported.visited || {}).forEach(k => {
+    merged[k] = merged[k] || imported.visited[k];
+  });
+  tripState.visited = merged;
+  persist();
+  renderAll();
+  statusEl.textContent = '✅ Marcações juntadas — notas e roteiro editado mantidos como estavam.';
+}
+
+/* ==================================================================
+   RENDER
+================================================================== */
+function renderTimeline(dayKey){
+  if(editingDay === dayKey) return;
+  const items = getDayItems(dayKey);
+  const el = document.getElementById('tl-' + dayKey);
+  el.innerHTML = items.map((it, i) => {
+    const id = dayKey + '-' + (tripState.route||'A') + '-' + i;
+    const done = !!tripState.visited[id];
+    return `<div class="item ${it.t}">
+      <div class="card ${done?'done':''}" data-id="${id}">
+        <div class="row">
+          <span class="time">${esc(it.time)}</span>
+          <span class="title">${esc(it.title)}</span>
+          <span class="check ${done?'on':''}" onclick="toggleVisited('${id}', this); this.closest('.card').classList.toggle('done')">✓</span>
+        </div>
+        <p>${esc(it.desc)}</p>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderDayHeaders(){
+  const route = tripState.route || 'A';
+  const h = ROUTES[route].headers;
+  DAYS.forEach(d => {
+    document.getElementById('tag-'+d).textContent = h[d].tag;
+    document.getElementById('h2-'+d).textContent = h[d].h2;
+    document.getElementById('sub-'+d).textContent = h[d].sub;
+  });
+  document.getElementById('route-badge-text').textContent = '🌴 Roteiro ativo: ' + ROUTES[route].name;
+  ['A','B','C'].forEach(k => {
+    document.getElementById('rc-'+k).classList.toggle('selected', k===route);
+    const btn = document.querySelector('#rc-'+k+' .rc-select');
+    btn.textContent = (k===route) ? '✓ Alternativa selecionada' : 'Selecionar esta alternativa';
+  });
+}
+
+function renderPlaceList(containerId, items, showPrice){
+  const el = document.getElementById(containerId);
+  if(!el) return;
+  el.innerHTML = `<div class="place-list">` + items.map(it => {
+    const done = !!tripState.visited[it.id];
+    return `<div class="place">
+      <span class="check ${done?'on':''}" onclick="toggleVisited('${it.id}', this)">✓</span>
+      <div class="ptext"><div class="pn">${esc(it.n)}</div>${it.d?`<div class="pd">${esc(it.d)}</div>`:''}</div>
+      ${showPrice && it.p ? `<div class="pp">${esc(it.p)}</div>` : ''}
+    </div>`;
+  }).join('') + `</div>`;
+}
+
+function renderAll(){
+  renderDayHeaders();
+  DAYS.forEach(renderTimeline);
+
+  renderPlaceList('list-atracoes-sal', ATRACOES_SAL, false);
+  renderPlaceList('list-atracoes-boavista', ATRACOES_BOAVISTA, false);
+  renderPlaceList('list-atracoes-santiago', ATRACOES_SANTIAGO, false);
+  renderPlaceList('list-atracoes-saovicente', ATRACOES_SAOVICENTE, false);
+
+  renderPlaceList('list-food-sal', FOOD_SAL, true);
+  renderPlaceList('list-food-boavista', FOOD_BOAVISTA, true);
+  renderPlaceList('list-food-praia', FOOD_PRAIA, true);
+  renderPlaceList('list-food-mindelo', FOOD_MINDELO, true);
+
+  renderPlaceList('list-bagagem', BAGAGEM, false);
+
+  const notesArea = document.getElementById('group-notes');
+  if(document.activeElement.id !== 'group-notes'){ notesArea.value = tripState.notes || ''; }
+}
+
+/* ==================================================================
+   UI: tabs, food toggle, notas, reset
+================================================================== */
+function switchTab(panelId){
+  document.querySelectorAll('#tabbar > .tab').forEach(t => t.classList.toggle('active', t.dataset.panel===panelId));
+  document.querySelectorAll('.panel').forEach(p => p.classList.toggle('active', p.id===panelId));
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initStorage();
+
+  document.querySelectorAll('#tabbar > .tab').forEach(tab => {
+    tab.addEventListener('click', () => switchTab(tab.dataset.panel));
+  });
+
+  const foodTabs = document.querySelectorAll('.foodtab');
+  const foodPkgs = document.querySelectorAll('.foodpkg');
+  foodTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      foodTabs.forEach(t => t.classList.remove('active'));
+      foodPkgs.forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById('food-' + tab.dataset.food).classList.add('active');
+    });
+  });
+
+  let saveTimer = null;
+  const notesArea = document.getElementById('group-notes');
+  const notesStatus = document.getElementById('notes-status');
+  notesArea.addEventListener('input', () => {
+    notesStatus.textContent = 'A escrever…';
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(async () => {
+      tripState.notes = notesArea.value;
+      await persist();
+      notesStatus.textContent = 'Guardado ✓';
+      setTimeout(() => { notesStatus.textContent=''; }, 2000);
+    }, 700);
+  });
+
+  document.getElementById('reset-all').addEventListener('click', () => {
+    if(confirm('Têm a certeza que querem repor todas as marcações de "visitado"? As notas e edições ao roteiro não são apagadas.')){
+      tripState.visited = {};
+      persist();
+      renderAll();
+    }
+  });
+
+  document.getElementById('export-btn').addEventListener('click', doExport);
+  document.getElementById('copy-export-btn').addEventListener('click', copyExport);
+  document.getElementById('download-export-btn').addEventListener('click', downloadExport);
+  document.getElementById('import-replace-btn').addEventListener('click', importReplace);
+  document.getElementById('import-merge-btn').addEventListener('click', importMerge);
+  document.getElementById('import-file').addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if(!file) return;
+    const reader = new FileReader();
+    reader.onload = () => { document.getElementById('import-input').value = reader.result.trim(); };
+    reader.readAsText(file);
+  });
+});
+</script>
+
+</body>
+</html>
