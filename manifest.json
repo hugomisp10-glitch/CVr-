@@ -1,0 +1,13 @@
+{
+  "name": "Cabo Verde All Inclusive — Guia da Viagem",
+  "short_name": "Cabo Verde",
+  "description": "Roteiro de 7 dias, 3 alternativas de ilha, mapas e guia prático — Cabo Verde",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#04283a",
+  "theme_color": "#04283a",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
