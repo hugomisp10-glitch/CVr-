@@ -225,6 +225,10 @@
   .m3-bar{display:flex;gap:8px;padding:8px 16px;max-width:760px;margin:0 auto}.m3-bar button,.m3-grid button{flex:1}
   .m3-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.m3-grid button{margin:0}.pm3{border:0;background:var(--wine);color:#fff;font-family:inherit;cursor:pointer;margin-left:6px}
   .m3-bar button,.m3-grid button{background:linear-gradient(135deg,var(--gold-2),var(--gold));color:var(--night);border:0;border-radius:999px;padding:11px 14px;font-weight:800;font-size:14px;box-shadow:0 4px 12px rgba(0,0,0,.25)}.m3-bar button:active,.m3-grid button:active{transform:scale(.97)}
+  .banner.ph{background-size:cover!important;background-position:center!important}.banner.ph .bg-icon{opacity:.18}
+  .gal{display:flex;gap:10px;overflow-x:auto;padding:2px 0 8px;scroll-snap-type:x mandatory;scrollbar-width:none}.gal::-webkit-scrollbar{display:none}
+  .gal a{flex:none;width:78%;max-width:300px;scroll-snap-align:start;border-radius:14px;overflow:hidden;background:var(--cream);box-shadow:var(--shadow);color:var(--ink);text-decoration:none}
+  .gal img{width:100%;height:170px;object-fit:cover}.gal span{display:block;padding:8px 11px;font-size:12.5px;font-weight:700}
 </style>
 </head>
 <body>
@@ -402,6 +406,11 @@
     <div class="tag">Atrações</div>
     <h2>O que ver em cada ilha</h2>
     <p>Praias, geologia vulcânica e património — organizado por destino</p>
+  </div>
+
+  <div class="block">
+    <h3>📸 Galeria</h3>
+    <div class="gal" id="gal"></div>
   </div>
 
   <div class="block">
@@ -1408,6 +1417,24 @@ fetch('horarios/lista.json').then(r=>r.json()).then(L=>{
   if(!L.length){el.innerHTML='<div class="place"><div class="ptext"><div class="pd">Ainda sem horários — adicionem PDFs a horarios/ e listem em horarios/lista.json.</div></div></div>';return;}
   el.innerHTML=L.map(h=>`<div class="place"><div class="ptext"><div class="pn">${esc(h.nome)}</div></div><a class="pmap" target="_blank" rel="noopener" href="horarios/${encodeURIComponent(h.ficheiro)}">PDF ↗</a></div>`).join('');
 }).catch(()=>{});
+
+/* ===== Fotos ===== */
+const F=n=>'fotos/'+n+'.jpg';
+const GAL=[['cidade-velha-praca','Praça da Cidade Velha, Santiago'],['tarrafal','Tarrafal, Santiago'],['laginha','Praia da Laginha, Mindelo'],['ilheu-passaros','Ilhéu dos Pássaros, Mindelo'],['praia-kayaks','Praia em Mindelo (a confirmar)'],['estrada-verde','Estrada pelo interior verde (a confirmar)'],['forte-amarelo','Entrada amarela de forte ou museu (a confirmar)'],['rua-colorida','Rua colorida (a confirmar)'],['mindelo-marina','Marina e Praia da Laginha, Mindelo'],['mindelo-praia','Praia e casario de Mindelo'],['montanhas-verdes','Montanhas verdes (a confirmar)'],['estrada-corda','Estrada de montanha, Santo Antão'],['fontainhas','Fontainhas, Santo Antão'],['buracona','Buracona (Olho Azul), Sal'],['tubaroes','Tubarões-limão em águas rasas'],['praia-farol','Praia, capital de Santiago'],['cidade-velha','Costa de Cidade Velha (a confirmar)'],['mindelo-baia','Baía de Mindelo (a confirmar)'],['resort-praia','Resort junto à praia'],['resort-render','Resort — projeto 3D'],['costa-sv','Costa e baía (a confirmar)'],['costa-rochas','Costa rochosa com casas'],['naufragio','Naufrágio, Boa Vista'],['praia-boavista','Praia selvagem, Boa Vista'],['resort-piscina','Resort com piscinas, Boa Vista'],['baia-sv','Baía com vista para outra ilha'],['praia-santiago','Praia e vila costeira'],['barco-praia','Praia e águas turquesa'],['cais-barcos','Cais de Santa Maria, Sal'],['resort-molhe','Resort com molhe, Sal'],['tartaruga','Snorkel com tartarugas'],['sal-aerea','Ilha do Sal vista de cima'],['bandeira-praia','Dança com a bandeira de Cabo Verde'],['baia','Baía de águas turquesa (a confirmar)'],['rua-colonial','Rua colonial com palmeiras'],['coreto','Coreto e casario colorido'],['mural-cesaria','Mural de Cesária Évora']];
+const DAYPH={A:{d1:'resort-praia',d2:'barco-praia',d3:'buracona',d4:'bandeira-praia',d5:'cais-barcos',d6:'tartaruga',d7:'resort-molhe'},
+ B:{d1:'resort-piscina',d2:'praia-boavista',d3:'praia-boavista',d4:'bandeira-praia',d5:'tartaruga',d6:'naufragio',d7:'resort-piscina'},
+ C:{d1:'praia-farol',d2:'cidade-velha-praca',d3:'estrada-verde',d4:'laginha',d5:'mindelo-marina',d6:'fontainhas',d7:'mindelo-praia'}};
+function photo(el,name){ if(!el)return; el.classList.add('ph'); el.style.backgroundImage='linear-gradient(180deg,rgba(4,25,36,.05),rgba(4,25,36,.62)),url('+F(name)+')'; }
+function applyPhotos(){
+  const h=document.querySelector('.hero'); if(h) h.style.background='linear-gradient(180deg,rgba(4,40,58,.18) 0%,rgba(4,25,36,.62) 60%,var(--night) 100%),url('+F('barco-praia')+') center/cover';
+  photo(document.querySelector('#rc-A .banner'),'cais-barcos'); photo(document.querySelector('#rc-B .banner'),'naufragio'); photo(document.querySelector('#rc-C .banner'),'estrada-corda');
+  ['cais-barcos','praia-boavista','cidade-velha-praca','mindelo-marina'].forEach((n,i)=>photo(document.querySelectorAll('#ver .block .banner')[i],n));
+  photo(document.querySelector('#comer .banner'),'bandeira-praia'); photo(document.querySelector('#mapas .banner'),'sal-aerea'); photo(document.querySelector('#custos .banner'),'barco-praia'); photo(document.querySelector('#pratico .banner'),'coreto');
+  const r=tripState.route||'A'; DAYS.forEach(d=>photo(document.getElementById('banner-'+d),DAYPH[r][d]));
+}
+document.getElementById('gal').innerHTML=GAL.map(g=>`<a href="${F(g[0])}" target="_blank" rel="noopener"><img loading="lazy" src="${F(g[0])}" alt="${esc(g[1])}"><span>${esc(g[1])}</span></a>`).join('');
+const _ra=renderAll; renderAll=function(){_ra();applyPhotos();};
+applyPhotos();
 </script>
 
 </body>
